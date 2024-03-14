@@ -1,0 +1,16 @@
+.titulo {
+	font-size: 12px;
+	margin: 0;
+}
+
+.descripcion {
+	font-size: 14px;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-flow: column;
+	text-align: end;
+	margin: 0px;
+}
