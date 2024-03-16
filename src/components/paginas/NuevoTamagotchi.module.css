@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	flex-flow: column;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 10px;
+}

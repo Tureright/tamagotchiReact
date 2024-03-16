@@ -1,4 +1,8 @@
-.containerTarjetas {
-    display: flex;
-    flex-flow: row wrap;
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 10px;
+	background: black;
+	padding: 10px;
 }

@@ -8,9 +8,28 @@
 	margin: 0;
 }
 
-.container {
+.containerCaracteristica {
 	display: flex;
 	flex-flow: column;
-	text-align: end;
 	margin: 0px;
+	border-radius: 0 10px 10px 0;
+	background-color: #B3D6FF;
+	padding: 0 10px;
+	height: 40px;
+	width: 95px;
+}
+
+.rowContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.emoticono {
+	background-color: #1E344D;
+	border-radius: 10px 0 0 10px;
+	padding: 10px;
+	font-size: 20px;
+	color: whitesmoke;
 }

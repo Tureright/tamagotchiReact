@@ -6,18 +6,27 @@ import styles from './Tarjeta.module.css';
 const Tarjeta = () => {
 	// Lifting state up
 	const [estado, setEstado] = useState('Aburrido');
-	
-	const handleClick = (nuevoEstado) => {
-		setEstado(nuevoEstado)
-	}
-	return <div className={styles.columnContainer}>
-		<GrupoCaracteristicas nombre={'Pepe'} estado={estado}></GrupoCaracteristicas>
-		<div className={styles.rowContainer}>
-        <Pantalla></Pantalla>
-        <GrupoBotones onClick={handleClick}></GrupoBotones>
+	// const [tiempoVida, setTiempoVida] = useState(parseInt(sessionStorage.getItem('tiempoVida') || '0'));
+
+	const handleClick = nuevoEstado => {
+		setEstado(nuevoEstado);
+	};
+	return (
+		<div className={styles.columnContainer}>
+			<h3>Pepe</h3>
+			<div className={styles.rowContainer}>
+			<GrupoCaracteristicas
+				nombre={'Pepe'}
+				estado={estado}
+			/>
+			<Pantalla/>
+			
+			</div>
+			
+			<GrupoBotones onClick={handleClick}></GrupoBotones>
 			
 		</div>
-	</div>
+	);
 };
 
 export default Tarjeta;
